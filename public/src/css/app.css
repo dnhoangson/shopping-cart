@@ -16,3 +16,7 @@
     font-weight: bold;
     font-size: 16px;
 }
+
+.btn {
+    z-index: 0!important;
+}

@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title'); ?>
 Laravel Shopping Cart
 <?php $__env->stopSection(); ?>
@@ -14,8 +16,8 @@ Laravel Shopping Cart
                     <h5 class="card-title"><?php echo e($product->title); ?></h5>
                     <p class="card-text"><?php echo e($product->description); ?></p>
                     <div class="clearfix mt-auto">
-                        <div class="float-left price">$<?php echo e($product->price); ?></div>
-                        <a href="#" class="btn btn-success btn-outline-success float-right "><i class="fas fa-cart-plus"></i> Add to Cart</a>
+                        <div class="float-left price">&#36;<?php echo e($product->price); ?></div>
+                        <a href="<?php echo e(route('product.addToCart', ['id' => $product->id])); ?>" class="btn btn-success btn-outline-success float-right "><i class="fas fa-cart-plus"></i> Add to Cart</a>
                     </div>
                 </div>
             </div>

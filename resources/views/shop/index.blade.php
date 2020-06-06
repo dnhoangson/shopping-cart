@@ -16,7 +16,7 @@ Laravel Shopping Cart
                     <h5 class="card-title">{{ $product->title }}</h5>
                     <p class="card-text">{{ $product->description }}</p>
                     <div class="clearfix mt-auto">
-                        <div class="float-left price">${{ $product->price }}</div>
+                        <div class="float-left price">&#36;{{ $product->price }}</div>
                         <a href="{{ route('product.addToCart', ['id' => $product->id]) }}" class="btn btn-success btn-outline-success float-right "><i class="fas fa-cart-plus"></i> Add to Cart</a>
                     </div>
                 </div>

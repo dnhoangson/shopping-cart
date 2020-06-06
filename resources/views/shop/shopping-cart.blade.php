@@ -12,16 +12,17 @@ Laravel Shopping Cart
     <ul class="list-group col-12">
         <div class="row">
             @foreach($products as $product)
-
             <li class="list-group-item col-12">
-                <div class="col-1">
-                    <span class="badge badge-secondary">{{ $product['qty'] }}</span>
-                </div>
+                
                 <div class="col-4">
                     <strong>{{ $product['item']['title'] }}</strong>
                 </div>
+                
                 <div class="offset-md-2 col-1">
-                    <span class="label label-success">{{ $product['price'] }}</span>
+                    <span class="label label-success">&#36;{{ $product['price'] }}</span>
+                </div>
+                <div class="col-1">
+                    <span class="badge badge-secondary">{{ $product['qty'] }}</span>
                 </div>
                 <div class="offset-md-1 col-md-2">
                     <div class="btn-group pull-right">
@@ -37,19 +38,19 @@ Laravel Shopping Cart
             </li>
             @endforeach
         </div> 
-        
     </ul>
-    
 </div>
+
+
 <div class="row">
-    <div class="col-sm-6">
-        <strong>Total Price: {{ $totalPrice }}</strong>
+    <div class="col-sm-6 float-right">
+        <strong>Total Price: &#36;{{ $totalPrice }}</strong>
     </div>
 </div>
 <hr>
 <div class="row">
     <div class="col-sm-6">
-        <button type="button" class="btn btn-success btn-outline-success">Checkout</button>
+        <button href="#" type="button" class="btn btn-success btn-outline-success">Checkout</button>
     </div>
 </div>
 @else

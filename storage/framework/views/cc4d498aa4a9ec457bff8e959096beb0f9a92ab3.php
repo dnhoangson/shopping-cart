@@ -16,7 +16,10 @@
         </ul>
         <ul class="navbar-nav ml-right">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Shopping Cart</a>
+                <a class="nav-link" href="<?php echo e(route('product.shoppingCart')); ?>">
+                    <i class="fas fa-shopping-cart"></i> Shopping Cart
+                    <span class="badge badge-info"><?php echo e(Session::has('cart') ? Session::get('cart')->totalQuantity : ''); ?></span>
+                </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
