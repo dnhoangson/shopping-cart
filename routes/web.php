@@ -34,7 +34,7 @@ Route::get('/checkout', [
     'as' => 'checkout'
 ]);
 Route::post('/checkout', [
-    'uses' => 'ProductController@getCheckout',
+    'uses' => 'ProductController@postCheckout',
     'as' => 'checkout'
 ]);
 

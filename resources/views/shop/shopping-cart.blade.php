@@ -50,7 +50,7 @@ Laravel Shopping Cart
 <hr>
 <div class="row">
     <div class="col-sm-6">
-        <button href="#" type="button" class="btn btn-success btn-outline-success">Checkout</button>
+        <a href="{{ route('checkout') }}" type="button" class="btn btn-success btn-outline-success">Checkout</a>
     </div>
 </div>
 @else
